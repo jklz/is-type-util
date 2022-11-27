@@ -6,5 +6,9 @@ import type {Config} from '@jest/types';
 
 const jestConfig: Config.InitialOptions = {
   rootDir: "./",
+  testPathIgnorePatterns: [
+    // ignore any built files for package
+    "./dist"
+  ],
 };
 export default jestConfig;
