@@ -1,0 +1,5 @@
+export {isBoolean} from './is-boolean'
+export {isDefined} from './is-defined'
+export {isNumber} from './is-number'
+export {isString} from './is-string'
+export {isUndefined} from './is-undefined'
