@@ -1,6 +1,5 @@
 import isDefined from "../is-defined";
 import * as values from "../examples/example-values";
-import {exampleUndefined} from "../examples/example-values";
 
 describe('should check if is defined', function () {
 
