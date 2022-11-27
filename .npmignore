@@ -1,0 +1,7 @@
+# no tests
+**.test.js
+**.test.jsx
+**.test.d.ts
+__tests__
+# no mocks
+__mocks__
