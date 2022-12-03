@@ -4,13 +4,14 @@ engines:
     enabled: true
     exclude_paths:
       - src/examples/*
-      - __tests__/*
+      - */__tests__/*
+      - src/__tests__/*
       - dist/*
   coverage:
     enabled: true
     exclude_paths:
       - src/examples/*
-      - __tests__/*
+      - */__tests__/*
       - dist/*
       - *.md
   metric:
