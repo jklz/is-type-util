@@ -22,3 +22,41 @@ export const exampleBoolTrue: boolean = true;
 export const exampleFalse: false = false;
 export const exampleBoolFalse: boolean = false;
 
+export const exampleArray: (number | string)[] = [
+  exampleNumber,
+  exampleString,
+  exampleNumberNegative,
+  exampleStringOfNumber,
+];
+
+export const exampleArrayStrings: string[] = [
+  exampleString,
+  exampleStringOfNumber,
+  exampleStringWithSpaces,
+  exampleStringOfSpacesValue,
+  exampleStringEmpty,
+];
+
+export const exampleArrayNumbers: number[] = [
+  exampleNumber,
+  exampleNumberNegative,
+  exampleNumberNan,
+  exampleNumberInt,
+  exampleNumberIntNegative,
+];
+
+export const exampleArrayUndefined: undefined[] = [
+  exampleUndefined,
+];
+
+export const exampleArrayNulls: null[] = [
+  exampleNull,
+];
+
+export const exampleArrayBoolean: boolean[] = [
+  exampleBool,
+  exampleTrue,
+  exampleBoolTrue,
+  exampleFalse,
+  exampleBoolFalse,
+];
