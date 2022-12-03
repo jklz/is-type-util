@@ -1,6 +1,7 @@
 module.exports = {
   ignorePatterns: [
-    '.eslintrc.js'
+    '.eslintrc.js',
+    'babel.config.js',
   ],
   extends: [
     'eslint:recommended',
