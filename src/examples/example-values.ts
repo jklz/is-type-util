@@ -1,4 +1,4 @@
-
+/* eslint-disable @typescript-eslint/naming-convention */
 export const exampleString: string = `string`;
 export const exampleStringOfNumber: string = `18`;
 export const exampleStringWithSpaces: string = ` a string `;

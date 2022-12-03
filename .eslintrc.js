@@ -1,18 +1,20 @@
 module.exports = {
-  "extends": [
+  ignorePatterns: [
+    '.eslintrc.js'
+  ],
+  extends: [
+    'eslint:recommended',
     "plugin:@typescript-eslint/recommended",
   ],
-  "settings": {
-    "react": {
-      "version": "detect",
-    },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: "./tsconfig.json",
   },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-    "project": './tsconfig.json',
-  },
-  "rules": {
+  plugins: [
+    '@typescript-eslint'
+  ],
+  root: true,
+  rules: {
     "prettier/prettier": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-use-before-define": "off",
@@ -22,6 +24,7 @@ module.exports = {
     "@typescript-eslint/interface-name-prefix": "off", // we want interfaces to start with "I" so it's easy to distinguish between interfaces and classes.
     "@typescript-eslint/member-delimiter-style": "off", //adds annoyance and no value.
     "@typescript-eslint/no-object-literal-type-assertion": "off", // {} as IOffsets is useful
+    "@typescript-eslint/prefer-as-const": "off",
     // replacement for @typescript-eslint/camelcase due to being removed
     "@typescript-eslint/naming-convention": [
       "warn",
