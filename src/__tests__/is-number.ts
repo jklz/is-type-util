@@ -3,7 +3,7 @@ import isNumber from "../is-number";
 
 
 
-describe('should check if is undefined', function () {
+describe('should check if is number', function () {
 
   it('should return false when receives string', function () {
     expect(isNumber(values.exampleString)).toBeFalsy();
@@ -39,6 +39,15 @@ describe('should check if is undefined', function () {
     expect(isNumber(values.exampleBoolTrue)).toBeFalsy();
     expect(isNumber(values.exampleFalse)).toBeFalsy();
     expect(isNumber(values.exampleBoolFalse)).toBeFalsy();
+  });
+
+  it('should return false when receives array', function () {
+    expect(isNumber(values.exampleArray)).toBeFalsy();
+    expect(isNumber(values.exampleArrayStrings)).toBeFalsy();
+    expect(isNumber(values.exampleArrayNumbers)).toBeFalsy();
+    expect(isNumber(values.exampleArrayUndefined)).toBeFalsy();
+    expect(isNumber(values.exampleArrayNulls)).toBeFalsy();
+    expect(isNumber(values.exampleArrayBoolean)).toBeFalsy();
   });
 
 

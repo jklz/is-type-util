@@ -41,6 +41,15 @@ describe('should check if is undefined', function () {
     expect(isUndefined<boolean>(values.exampleBoolFalse)).toBeFalsy();
   });
 
+  it('should return false when receives array', function () {
+    expect(isUndefined(values.exampleArray)).toBeFalsy();
+    expect(isUndefined(values.exampleArrayStrings)).toBeFalsy();
+    expect(isUndefined(values.exampleArrayNumbers)).toBeFalsy();
+    expect(isUndefined(values.exampleArrayUndefined)).toBeFalsy();
+    expect(isUndefined(values.exampleArrayNulls)).toBeFalsy();
+    expect(isUndefined(values.exampleArrayBoolean)).toBeFalsy();
+  });
+
 
   it('should work as type guard for typescript', function () {
 

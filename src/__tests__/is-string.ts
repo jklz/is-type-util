@@ -42,6 +42,15 @@ describe('should check if is string', function () {
     expect(isString(values.exampleBoolFalse)).toBeFalsy();
   });
 
+  it('should return false when receives array', function () {
+    expect(isString(values.exampleArray)).toBeFalsy();
+    expect(isString(values.exampleArrayStrings)).toBeFalsy();
+    expect(isString(values.exampleArrayNumbers)).toBeFalsy();
+    expect(isString(values.exampleArrayUndefined)).toBeFalsy();
+    expect(isString(values.exampleArrayNulls)).toBeFalsy();
+    expect(isString(values.exampleArrayBoolean)).toBeFalsy();
+  });
+
 
   it('should work as type guard for typescript', function () {
 

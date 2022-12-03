@@ -40,6 +40,15 @@ describe('should check if is defined', function () {
     expect(isDefined<boolean>(values.exampleBoolFalse)).toBeTruthy();
   });
 
+  it('should return true when receives array', function () {
+    expect(isDefined(values.exampleArray)).toBeTruthy();
+    expect(isDefined(values.exampleArrayStrings)).toBeTruthy();
+    expect(isDefined(values.exampleArrayNumbers)).toBeTruthy();
+    expect(isDefined(values.exampleArrayUndefined)).toBeTruthy();
+    expect(isDefined(values.exampleArrayNulls)).toBeTruthy();
+    expect(isDefined(values.exampleArrayBoolean)).toBeTruthy();
+  });
+
 
   it('should work as type guard for typescript', function () {
 

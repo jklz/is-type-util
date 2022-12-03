@@ -1,7 +1,8 @@
 import isBoolean from "../is-boolean";
 import * as values from "../examples/example-values";
 
-describe('should check if is defined', function () {
+
+describe('should check if is boolean', function () {
 
   it('should return false when receives string', function () {
     expect(isBoolean(values.exampleString)).toBeFalsy();
@@ -38,6 +39,15 @@ describe('should check if is defined', function () {
     expect(isBoolean(values.exampleBoolTrue)).toBeTruthy();
     expect(isBoolean(values.exampleFalse)).toBeTruthy();
     expect(isBoolean(values.exampleBoolFalse)).toBeTruthy();
+  });
+
+  it('should return false when receives array', function () {
+    expect(isBoolean(values.exampleArray)).toBeFalsy();
+    expect(isBoolean(values.exampleArrayStrings)).toBeFalsy();
+    expect(isBoolean(values.exampleArrayNumbers)).toBeFalsy();
+    expect(isBoolean(values.exampleArrayUndefined)).toBeFalsy();
+    expect(isBoolean(values.exampleArrayNulls)).toBeFalsy();
+    expect(isBoolean(values.exampleArrayBoolean)).toBeFalsy();
   });
 
 
