@@ -7,7 +7,7 @@ node_js:
 sudo: false
 branches:
   only:
-    - master
+    - main
 cache:
   directories:
     - node_modules
