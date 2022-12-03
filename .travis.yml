@@ -1,11 +1,12 @@
+dist: bionic
 language: node_js
 node_js:
   - "18"
   - "16"
-  - "lts"
-  - "node"
-  - "8"
-  - "7"
+#  - "lts"
+#  - "node"
+#  - "8"
+#  - "7"
 sudo: false
 branches:
   only:
