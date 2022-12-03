@@ -1,6 +1,6 @@
 {
   "name": "is-type-util",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "type check util",
   "main": "index.js",
   "scripts": {
