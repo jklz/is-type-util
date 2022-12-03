@@ -7,7 +7,7 @@
     "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test:coverage": "jest --coverage && nodecat ./coverage/lcov.info | codacy-coverage  --token 22ca4cbc808e4af39207fe630229b13f",
     "test:ci": "jest --reporters=jest-junit",
     "preversion": "npm test",
     "prerelease": "npm run action:dist:setup",
